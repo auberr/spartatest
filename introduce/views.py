@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import AccessLog
+''' 절대경로 사용'''
+from introduce.models import AccessLog
 
 # Create your views here.
 
