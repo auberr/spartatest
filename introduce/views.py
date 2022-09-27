@@ -18,4 +18,4 @@ def introduce(request):
         location="introduce"
     )
 
-    return render(request, 'index.html')
+    return render(request, 'introduce.html')
