@@ -5,4 +5,5 @@ from .models import AccessLog
 
 def introduce(request):
     user = AccessLog()
+
     return render(request, 'index.html')
