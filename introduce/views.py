@@ -4,6 +4,17 @@ from .models import AccessLog
 # Create your views here.
 
 def introduce(request):
-    user = AccessLog()
+    # case1
+    
+    '''
+    access_log = AccessLog()
+    access_log.location = "introduce"
+    access_log.save()
+    '''
+
+    # case2
+    AccessLog.objects.create(
+        location="introduce"
+    )
 
     return render(request, 'index.html')
